@@ -1,98 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html css 실습1</title>
+    <title>GitHub 헤더 예제</title>
+    <!-- link 요소가 추가 되었군요! -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="container">
-        <ul>
-            <li><a href="#">링크 1 네이버 메인</a></li>
-            <li><a href="#">링크 2 다음 메인</a></li>
-            <li><a href="#">링크 3 구글 메인</a></li>
-        </ul>
-    </header>
-    <article class="container main-img">
-        <div class="text-box text-center">
-            <h2>***문구 입력***</h2>
-            <p>***문구 입력***</p>
-        </div>
-    </article>
-    <article class="container">
-        <div class="v250 text-center">
-            <h2>*** 문구 입력***</h2>
-            <p>*** 문구 입력*** </p>
-            <p>*** 문구 입력*** </p>
-        </div>
-        <div class="row img-part">
-            <div class="col-3">
-                <figure>
-                    <div class="circle">
-                        <img src="http://css3.zerois.net/images/fig1.jpg" alt="사진 1">
-                    </div>
-                    <figcaption>
-                        <h3>***사진 제목***</h3>
-                        <p>***사진 설명***</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-3">
-                <figure>
-                    <div class="circle">
-                        <img src="http://css3.zerois.net/images/fig2.jpg" alt="사진 2">
-                    </div>
-                    <figcaption>
-                        <h3>***사진 제목***</h3>
-                        <p>***사진 설명***</p>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-3">
-                <figure>
-                    <div class="circle">
-                        <img src="http://css3.zerois.net/images/fig3.jpg" alt="사진 3">
-                    </div>
-                    <figcaption>
-                        <h3>***사진 제목***</h3>
-                        <p>***사진 설명***</p>
-                    </figcaption>
-                </figure>
+    <div class="header">
+        <!-- clearfix 클래스 값이 추가 되었군요! -->
+        <!-- class 속성은 띄어쓰기로 여러 클래스를 구분하여 동시에 사용할 수 있습니다. -->
+        <!-- 아래 요소는 <div class="container" class="clearfix"> 와 같습니다. -->
+        <div class="container clearfix">
+            <!-- clearfix 클래스 값이 추가 되었군요! -->
+            <div class="container-left clearfix">
+                <div class="logo">
+                    <img src="https://heropcode.github.io/GitHub-Responsive/img/logo.svg" alt="GitHub Logo">
+                </div>
+                <!-- clearfix 클래스 값이 추가 되었군요! -->
+                <div class="menu clearfix">
+                    <div class="menu-item">Personal</div>
+                    <div class="menu-item">Open Source</div>
+                    <div class="menu-item">Business</div>
+                    <div class="menu-item">Explore</div>
+                </div>
             </div>
         </div>
+    </div>
+    <section class="section--visual">
+        <div class="inner">
+            <div class="summary">
+                <h2 class="summary__title">GitHub &nbsp;메인 페이지 입니다!!</h2>                                                                                     class="summary_description">내용을 적어주세요</p>
+            </div>
         </div>
-    </article>
-    <article class="container gray-back">
-        <div class="row v350">
-            <h2 class="text-center">***제목***</h2>
-            <p>***내용***</p>
-        </div>
-        <div class="icon-box">
-            <i class="fa fa-hand-peace-o fa-4x" aria-hidden="true"></i>
-            <p>***아이콘 입니다.***</p>
-        </div>
-        <div class="icon-box">
-            <i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i>
-            <p>***아이콘 입니다.***</p>
-        </div>
-        <div class="icon-box">
-            <i class="fa fa-flask fa-4x" aria-hidden="true"></i>
-            <p>***아이콘 입니다.***</p>
-        </div>
-        <div class="icon-box">
-            <i class="fa fa fa-line-chart fa-4x" aria-hidden="true"></i>
-            <p>***아이콘 입니다.***</p>
-        </div>
-    </article>
-    <footer class="container">
-        <div class="footlogo">***@***</div>
-        <ul>
-            <li><a href="#">***링크 4***</a></li>
-            <li><a href="#">***링크 5*** </a></li>
-            <li><a href="#">***링크 6***</a></li>
-        </ul>
-    </footer>
+    </section>
 </body>
 </html>
-
